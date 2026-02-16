@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  width: 90%;
+  max-width: 678px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #00fcba, #5b548a);
+  padding: 10px 5px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.35);
+  color: #fff;
+}
+
+.card img {
+  width: 100px;
+}
+.search_box {
+  width: 80%;
+  margin: 10px auto;
+}
+.search_box input {
+  width: 80%;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 5px 10px;
+  outline: none;
+  background-color: #eee;
+  color: #333;
+}
+
+.search_box button {
+  width: 10%;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  color: #333;
+  background-color: #eee;
+  cursor: pointer;
+  padding: 5px 6px;
+}
+
+.weather .weather_icon {
+  width: 300px;
+  margin-top: 20px;
+}
+
+.w-details {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px auto;
+}
+
+.humidity_box,
+.wind_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+.humidity_box,
+.wind_box img {
+  width: 150px;
+}
+
+.humidity_box img {
+  height: 80px;
+}
+
+.m-right {
+  margin-left: -15px;
+}
+
+.error {
+  text-align: left;
+  margin-left: 100px;
+  color: #f32121;
+  display: none;
+}
+
+.error p {
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.weather {
+  display: none;
+}

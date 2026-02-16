@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Card Design With API</title>
+
+  <!-- fontawsome icon cdn link add  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- css file link add -->
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <!-- card  -->
+  <div class="card">
+    <div class="search_box">
+      <input type="text" placeholder="Enter your city!" spellcheck="false" required>
+      <button><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+
+    <div class="error">
+      <p>Inviled your city Names!</p>
+    </div>
+
+    <!-- Weather box  -->
+    <div class="weather">
+      <img src="./img/rain-icon.png" alt="weather-icon" class="weather_icon">
+      <h1 class="temp">22°C</h1>
+      <h1 class="city">Brahmanbaria</h1>
+
+      <!-- Weather Details -->
+      <div class="w-details">
+
+        <!-- Huminity -->
+        <div class="humidity_box">
+          <img src="./img/huminity-icon.png" alt="humidity-icon">
+          <div>
+            <p class="humidity">50%</p>
+            <p>Humidity</p>
+          </div>
+
+        </div>
+
+        <!-- Wind  -->
+        <div class="wind_box">
+          <img src="./img/wind-icon.png" alt="wind-icon">
+          <div class="m-right">
+            <p class="wind_speed">12 Km/h</p>
+            <p>Wind Speed</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
