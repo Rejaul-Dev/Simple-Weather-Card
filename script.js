@@ -33,6 +33,7 @@ async function checkApiKey(city) {
 searchBtn.addEventListener("click", () => {
   let inputValue = inputFild.value;
   if (inputValue === "") {
+    err.style.display = "none";
     window.alert("Please enter your city or country Name! ");
   } else {
     checkApiKey(inputValue);
